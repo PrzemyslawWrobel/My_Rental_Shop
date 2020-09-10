@@ -36,8 +36,8 @@ namespace MyRentalShop
                 if (menuAction.MenuName == menuName)
                 {
                     result.Add(menuAction);
-                }  
-            } 
+                }
+            }
             return result;
         }
     }

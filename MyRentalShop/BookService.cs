@@ -26,7 +26,7 @@ namespace MyRentalShop
             return operation;
         }
 
-        public int AddNewBook (char bookType)
+        public int AddNewBook(char bookType)
         {
             int bookTypeId;
             Int32.TryParse(bookType.ToString(), out bookTypeId);
@@ -56,6 +56,7 @@ namespace MyRentalShop
             book.Author = author;
             book.Description = description;
             book.Edition = edition;
+          
 
             Books.Add(book);
             return bookId;
@@ -76,7 +77,7 @@ namespace MyRentalShop
             Book bookToRemove = new Book();
             foreach (var book in Books)
             {
-                if(book.IdBook == removeId)
+                if (book.IdBook == removeId)
                 {
                     bookToRemove = book;
                     break;
@@ -84,5 +85,39 @@ namespace MyRentalShop
             }
             Books.Remove(bookToRemove);
         }
+
+        public int BookDetailSelectionView()
+        {
+            Console.WriteLine("Podaj id książki, którą chcesz zobaczyć: ");
+            var bookId = Console.ReadLine();
+            int id;
+            Int32.TryParse(bookId, out id);
+            return id;
+        }
+
+        public void BookDetailView(int detailId)
+        {
+            Book bookToShow = new Book();
+            foreach (var book in Books)
+            {
+                if (book.IdBook == detailId)
+                {
+                    bookToShow = book;
+                    break;
+                }
+            }
+
+            Console.WriteLine($"Id Książki: {bookToShow.IdBook}");
+            Console.WriteLine($"Tytuł Książki: {bookToShow.Title}");
+            Console.WriteLine($"Autor Książki: {bookToShow.Author}");
+            Console.WriteLine($"Rok wydania Książki: {bookToShow.Edition}");
+            Console.WriteLine($"Opis Książki: {bookToShow.Description}");
+            Console.WriteLine($"Gatunek Książki: {bookToShow.TypeId}");
+
+
+        }
     }
 }
+
+
+

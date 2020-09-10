@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.ComponentModel.Design;
 using System.Linq;
 
@@ -9,6 +10,7 @@ namespace MyRentalShop
         static void Main(string[] args)
         {
             MenuActionServices actionServices = new MenuActionServices();
+            BookService bookService = new BookService();
             actionServices = Initialize(actionServices);
 
             Console.WriteLine("Witaj w mojej wypożyczalni!");
@@ -23,7 +25,6 @@ namespace MyRentalShop
                 }
 
                 var operation = Console.ReadKey();
-                BookService bookService = new BookService();
                 switch (operation.KeyChar)
                 {
                     case '1':
@@ -35,6 +36,8 @@ namespace MyRentalShop
                         bookService.RemoveBook(removeId);
                         break;
                     case '3':
+                        var detailId = bookService.BookDetailSelectionView();
+                        bookService.BookDetailView(detailId);
                         break;
                     case '4':
                         break;
@@ -56,6 +59,7 @@ namespace MyRentalShop
             actionServices.AddNewAction(2, "Usuń książkę", "Main");
             actionServices.AddNewAction(3, "Pokaż szczegółowe informacje o książce", "Main");
             actionServices.AddNewAction(4, "Pokaż listę książek", "Main");
+            actionServices.AddNewAction(5, "Edytuj wybraną książkę", "Main");
 
             actionServices.AddNewAction(1, "DlaDzieci", "AddNewBookMenu");
             actionServices.AddNewAction(2, "Przygodowa", "AddNewBookMenu");
