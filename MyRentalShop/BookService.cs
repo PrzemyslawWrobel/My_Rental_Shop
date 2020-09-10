@@ -35,8 +35,8 @@ namespace MyRentalShop
 
             Console.WriteLine("Podaj Id nowej książki:");
             var id = Console.ReadLine();
-            int bookId;
-            Int32.TryParse(id, out bookId);
+            int idBook;
+            Int32.TryParse(id, out idBook);
 
             Console.WriteLine("Podaj tytuł książki:");
             var title = Console.ReadLine();
@@ -52,6 +52,7 @@ namespace MyRentalShop
             int edition;
             Int32.TryParse(tmp, out edition);
 
+            book.IdBook = idBook;
             book.Title = title;
             book.Author = author;
             book.Description = description;
@@ -59,7 +60,7 @@ namespace MyRentalShop
           
 
             Books.Add(book);
-            return bookId;
+            return idBook;
         }
 
 
@@ -114,6 +115,35 @@ namespace MyRentalShop
             Console.WriteLine($"Opis Książki: {bookToShow.Description}");
             Console.WriteLine($"Gatunek Książki: {bookToShow.TypeId}");
 
+
+        }
+
+        public int BookTypeSelectionView()
+        {
+            Console.WriteLine("Jaki gatunek książek chcesz zobaczyć. Podaj gatunek: ");
+            var typeId = Console.ReadLine();
+            int id;
+            Int32.TryParse(typeId, out id);
+            return id;
+        }
+
+        public void BookByTypeId(int typeId)
+        {
+            List<Book> booksToShow = new List<Book>();
+            foreach (var book in Books)
+            {
+                if(book.TypeId == typeId)
+                {
+                    booksToShow.Add(book);
+                }
+            }
+
+
+            for (int i = 0; i < booksToShow.Count ; i++)
+            {
+                Console.WriteLine($"Id Książki: {booksToShow[i].IdBook} Tytuł Książki: { booksToShow[i].Title} Autor Książki: {booksToShow[i].Author} Rok wydania Książki: {booksToShow[i].Edition}");
+                Console.WriteLine(" ");
+            }
 
         }
     }

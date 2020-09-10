@@ -40,6 +40,8 @@ namespace MyRentalShop
                         bookService.BookDetailView(detailId);
                         break;
                     case '4':
+                        var typeId = bookService.BookTypeSelectionView();
+                        bookService.BookByTypeId(typeId);
                         break;
                     case '5':
                         break;
