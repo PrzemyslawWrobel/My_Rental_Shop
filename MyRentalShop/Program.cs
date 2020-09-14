@@ -14,7 +14,9 @@ namespace MyRentalShop
             actionServices = Initialize(actionServices);
 
             Console.WriteLine("Witaj w mojej wypożyczalni!");
-            while (true)
+
+            bool exit = true;
+            while (exit)
             {
                 Console.WriteLine("Powiedz mi co chcesz zrobić?");
 
@@ -44,9 +46,9 @@ namespace MyRentalShop
                         bookService.BookByTypeId(typeId);
                         break;
                     case '5':
+                        exit = false;
                         break;
-                    case '6':
-                        break;
+                 
                     default:
                         Console.WriteLine("Nie ma takiej pozycji w menu.");
                         break;
@@ -61,7 +63,7 @@ namespace MyRentalShop
             actionServices.AddNewAction(2, "Usuń książkę", "Main");
             actionServices.AddNewAction(3, "Pokaż szczegółowe informacje o książce", "Main");
             actionServices.AddNewAction(4, "Pokaż listę książek", "Main");
-            actionServices.AddNewAction(5, "Edytuj wybraną książkę", "Main");
+            actionServices.AddNewAction(5, "Kończymy na dziś", "Main");
 
             actionServices.AddNewAction(1, "DlaDzieci", "AddNewBookMenu");
             actionServices.AddNewAction(2, "Przygodowa", "AddNewBookMenu");
