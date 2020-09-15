@@ -17,6 +17,4 @@ namespace MyRentalShop.Domain.Entity
             MenuName = menuName;
         }
     }
-    
-
 }

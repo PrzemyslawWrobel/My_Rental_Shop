@@ -2,6 +2,7 @@
 using MyRentalShop.Domain.Common;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace MyRentalShop.App.Common
@@ -15,24 +16,44 @@ namespace MyRentalShop.App.Common
             Items = new List<T>();
         }
 
+        public int GetLastId()
+        {
+            int lastId;
+            if (Items.Any())
+            {
+                lastId = Items.OrderBy(x => x.Id).LastOrDefault().Id;
+            }
+            else
+            {
+                lastId = 1;
+            }
+            return lastId;
+        }
+
         public int AddItem(T item)
         {
-            throw new NotImplementedException();
+            Items.Add(item);
+            return item.Id;
         }
 
         public List<T> GetAllItems()
         {
-            throw new NotImplementedException();
+            return Items;
         }
 
         public void RemoveItem(T item)
         {
-            throw new NotImplementedException();
+            Items.Remove(item);
         }
 
         public int UpdateItem(T item)
         {
-            throw new NotImplementedException();
+            var entity = Items.FirstOrDefault(x => x.Id == item.Id);
+            if(entity != null)
+            {
+                entity = item;
+            }
+            return entity.Id;
         }
     }
 }

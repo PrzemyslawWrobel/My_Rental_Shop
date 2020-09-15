@@ -1,4 +1,9 @@
 ﻿
+using MyRentalShop.App;
+using MyRentalShop.App.Abstract;
+using MyRentalShop.App.Concrete;
+using MyRentalShop.App.Managers;
+using MyRentalShop.Domain.Entity;
 using System;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -10,8 +15,7 @@ namespace MyRentalShop
         static void Main(string[] args)
         {
             MenuActionServices actionServices = new MenuActionServices();
-            BookService bookService = new BookService();
-            actionServices = Initialize(actionServices);
+            ItemManager itemManager = new ItemManager(actionServices);
 
             Console.WriteLine("Witaj w mojej wypożyczalni!");
 
@@ -57,22 +61,7 @@ namespace MyRentalShop
 
         }
         #region Metody prywatne
-        private static MenuActionServices Initialize(MenuActionServices actionServices)
-        {
-            actionServices.AddNewAction(1, "Dodaj książkę", "Main");
-            actionServices.AddNewAction(2, "Usuń książkę", "Main");
-            actionServices.AddNewAction(3, "Pokaż szczegółowe informacje o książce", "Main");
-            actionServices.AddNewAction(4, "Pokaż listę książek", "Main");
-            actionServices.AddNewAction(5, "Kończymy na dziś", "Main");
 
-            actionServices.AddNewAction(1, "DlaDzieci", "AddNewBookMenu");
-            actionServices.AddNewAction(2, "Przygodowa", "AddNewBookMenu");
-            actionServices.AddNewAction(3, "Sensacyjna", "AddNewBookMenu");
-            actionServices.AddNewAction(4, "Horror", "AddNewBookMenu");
-            actionServices.AddNewAction(5, "Romans", "AddNewBookMenu");
-            actionServices.AddNewAction(6, "Naukowa", "AddNewBookMenu");
-            return actionServices;
-        }
         #endregion
     }
 }

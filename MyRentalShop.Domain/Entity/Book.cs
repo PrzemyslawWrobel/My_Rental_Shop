@@ -1,15 +1,13 @@
-﻿using System;
+﻿using MyRentalShop.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyRentalShop
+namespace MyRentalShop.Domain.Entity
 {
-    public class Book
+    public class Book : BaseEntity
     {
-        /// <summary>
-        /// Nr identyfikacyjny książki
-        /// </summary>
-        public int IdBook { get; set; }
+   
 
         /// <summary>
         /// Tytuł skiążki
@@ -35,5 +33,15 @@ namespace MyRentalShop
         /// Gatunek książki(np dla dzieci, sensacyjna)
         /// </summary>
         public int TypeId { get; set; }
+
+        public Book(int id, string title, string author, string description, int edition, int typeId)
+        {
+            Id = id;
+            Title = title;
+            Author = author;
+            Description = description;
+            Edition = edition;
+            TypeId = typeId;
+        }
     }
 }
