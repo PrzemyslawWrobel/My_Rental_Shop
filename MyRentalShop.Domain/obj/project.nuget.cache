@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bg6NGsVbgGdYcKZFjB7OpYLoCv6Eio4UcgwyvfWOtCk5/vVYnRIvzpfWXFYkIQNksMrezbjwJvqRBp1ceuJI2w==",
+  "success": true,
+  "projectFilePath": "C:\\Z_Moje Dane\\Prywatne\\Kurs_.Net\\wypożyczalnia\\My_Rental_Shop\\MyRentalShop.Domain\\MyRentalShop.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Przemysław Wróbel\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Przemysław Wróbel\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

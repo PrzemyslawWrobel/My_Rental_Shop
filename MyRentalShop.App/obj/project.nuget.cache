@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XLeZXAC1xDN8XnB5znbUI0zBLx9J/XvwD9rVY+HQmJ4KTDU3ytsIsokCm2rm4yqnyB9sLLPOQN3G+K6AyKGekg==",
+  "success": true,
+  "projectFilePath": "C:\\Z_Moje Dane\\Prywatne\\Kurs_.Net\\wypożyczalnia\\My_Rental_Shop\\MyRentalShop.App\\MyRentalShop.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Przemysław Wróbel\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Przemysław Wróbel\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
