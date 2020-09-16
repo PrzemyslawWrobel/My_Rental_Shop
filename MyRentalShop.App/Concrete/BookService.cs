@@ -17,66 +17,7 @@ namespace MyRentalShop.App
 
 
 
-    //    public int AddNewBook(char bookType)
-    //    {
-    //        int bookTypeId;
-    //        Int32.TryParse(bookType.ToString(), out bookTypeId);
-    //        Book book = new Book();
-    //        book.TypeId = bookTypeId;
 
-    //        Console.WriteLine("Podaj Id nowej książki:");
-    //        var id = Console.ReadLine();
-    //        int idBook;
-    //        Int32.TryParse(id, out idBook);
-
-    //        Console.WriteLine("Podaj tytuł książki:");
-    //        var title = Console.ReadLine();
-
-    //        Console.WriteLine("Podaj autora książki:");
-    //        var author = Console.ReadLine();
-
-    //        Console.WriteLine("Podaj krótki opis książki:");
-    //        var description = Console.ReadLine();
-
-    //        Console.WriteLine("Podaj rok wydania książki:");
-    //        var tmp = Console.ReadLine();
-    //        int edition;
-    //        Int32.TryParse(tmp, out edition);
-
-    //        book.Id = idBook;
-    //        book.Title = title;
-    //        book.Author = author;
-    //        book.Description = description;
-    //        book.Edition = edition;
-          
-
-    //        Books.Add(book);
-    //        return idBook;
-    //    }
-
-
-    //    public int RemoveBookView()
-    //    {
-    //        Console.WriteLine("Podaj id książki, którą chcesz usunąć: ");
-    //        var bookId = Console.ReadLine();
-    //        int id;
-    //        Int32.TryParse(bookId, out id);
-    //        return id;
-    //    }
-
-    //    public void RemoveBook(int removeId)
-    //    {
-    //        Book bookToRemove = new Book();
-    //        foreach (var book in Books)
-    //        {
-    //            if (book.IdBook == removeId)
-    //            {
-    //                bookToRemove = book;
-    //                break;
-    //            }
-    //        }
-    //        Books.Remove(bookToRemove);
-    //    }
 
     //    public int BookDetailSelectionView()
     //    {

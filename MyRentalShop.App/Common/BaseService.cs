@@ -55,5 +55,11 @@ namespace MyRentalShop.App.Common
             }
             return entity.Id;
         }
+
+        public T GetItemById(int id)
+        {
+            var entity = Items.FirstOrDefault(p => p.Id == id);
+            return entity;
+        }
     }
 }

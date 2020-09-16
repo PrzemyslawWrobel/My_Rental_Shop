@@ -52,5 +52,11 @@ namespace MyRentalShop.App.Managers
             _bookService.AddItem(book);
             return book.Id;
         }
+
+        public void RemoveBookById(int id)
+        {
+            var book = _bookService.GetItemById(id);
+            _bookService.RemoveItem(book);
+        }
     }
 }
