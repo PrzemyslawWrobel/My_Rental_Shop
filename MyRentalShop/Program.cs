@@ -34,20 +34,20 @@ namespace MyRentalShop
                 switch (operation.KeyChar)
                 {
                     case '1':
-                        var keyInfo = bookService.AddNewBookView(actionServices);
-                        var id = bookService.AddNewBook(keyInfo.KeyChar);
+
+                        var newId = itemManager.AddNewBook();
                         break;
                     case '2':
-                        var removeId = bookService.RemoveBookView();
-                        bookService.RemoveBook(removeId);
+                        //var removeId = bookService.RemoveBookView();
+                        //bookService.RemoveBook(removeId);
                         break;
                     case '3':
-                        var detailId = bookService.BookDetailSelectionView();
-                        bookService.BookDetailView(detailId);
+                        //var detailId = bookService.BookDetailSelectionView();
+                        //bookService.BookDetailView(detailId);
                         break;
                     case '4':
-                        var typeId = bookService.BookTypeSelectionView();
-                        bookService.BookByTypeId(typeId);
+                        //var typeId = bookService.BookTypeSelectionView();
+                        //bookService.BookByTypeId(typeId);
                         break;
                     case '5':
                         exit = false;

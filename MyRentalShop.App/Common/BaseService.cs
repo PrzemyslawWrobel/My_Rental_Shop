@@ -25,7 +25,7 @@ namespace MyRentalShop.App.Common
             }
             else
             {
-                lastId = 1;
+                lastId = 0;
             }
             return lastId;
         }

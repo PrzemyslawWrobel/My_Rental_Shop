@@ -34,7 +34,7 @@ namespace MyRentalShop.Domain.Entity
         /// </summary>
         public int TypeId { get; set; }
 
-        public Book(int id, string title, string author, string description, int edition, int typeId)
+        public Book(int id, int typeId, string title, string author, string description, int edition )
         {
             Id = id;
             Title = title;

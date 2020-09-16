@@ -1,0 +1,9 @@
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\bin\Debug\netstandard2.0\MyRentalShop.Domain.deps.json
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\bin\Debug\netstandard2.0\MyRentalShop.Domain.dll
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\bin\Debug\netstandard2.0\MyRentalShop.Domain.pdb
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\obj\Debug\netstandard2.0\MyRentalShop.Domain.csprojAssemblyReference.cache
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\obj\Debug\netstandard2.0\MyRentalShop.Domain.AssemblyInfoInputs.cache
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\obj\Debug\netstandard2.0\MyRentalShop.Domain.AssemblyInfo.cs
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\obj\Debug\netstandard2.0\MyRentalShop.Domain.csproj.CoreCompileInputs.cache
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\obj\Debug\netstandard2.0\MyRentalShop.Domain.dll
+C:\Z_Moje Dane\Prywatne\Kurs_.Net\wypożyczalnia\My_Rental_Shop\MyRentalShop.Domain\obj\Debug\netstandard2.0\MyRentalShop.Domain.pdb
